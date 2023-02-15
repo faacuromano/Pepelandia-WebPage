@@ -1,0 +1,125 @@
+
+
+body {
+    font-family: Source Sans Pro,sans-serif;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    background: var(--background-color);
+    overflow-x: hidden;
+}
+.artowrk-container{
+    background-color: #071f04;
+    opacity: 1;
+    background-image:  linear-gradient(30deg, #073311 12%, transparent 12.5%, transparent 87%, #073311 87.5%, #073311), linear-gradient(150deg, #073311 12%, transparent 12.5%, transparent 87%, #073311 87.5%, #073311), linear-gradient(30deg, #073311 12%, transparent 12.5%, transparent 87%, #073311 87.5%, #073311), linear-gradient(150deg, #073311 12%, transparent 12.5%, transparent 87%, #073311 87.5%, #073311), linear-gradient(60deg, #07331177 25%, transparent 25.5%, transparent 75%, #07331177 75%, #07331177), linear-gradient(60deg, #07331177 25%, transparent 25.5%, transparent 75%, #07331177 75%, #07331177);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+
+    display: grid;
+    grid-template-columns: minmax(20vh, 45vh) minmax(20vh, 45vh);
+    justify-content: space-around;
+}
+
+.cardBody{
+    background-color: beige;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.cardTitle{
+margin: 0;
+}
+
+.buttonsContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    align-items: center;
+}
+
+.button{
+    color: white;
+    background-color: rgb(39, 39, 39);
+    border: 2px solid #fdfdfd; /* Green */
+    min-width: 11vh;
+    min-height: 6vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+.counter-Pagination-Label{
+    font-family: 'Chomsky';
+    display: flex;
+    font-size: xx-large;
+    border: 2px solid #ffffff;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.buttonPag{
+    font-size: large;
+    font-family: 'Chomsky';
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #fdfdfd; 
+    min-width: 5vh;
+    min-height: 3vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+.button:hover{
+    transition: all .5s;
+    color: black;
+    background-color: beige;
+    border: 2px solid #000000; 
+}
+
+.default-container{
+    background-color: #000000;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width:700px) {
+    .artowrk-container{
+        grid-template-columns:minmax(15vh, 50vh);
+    }
+}
+@media (max-width:485px) {
+    .Logo{
+       font-size: xxx-large;
+    }
+}
+@media (max-width:300px) {
+    .Logo{
+       font-size: xx-large;
+    }
+}
+@media (max-width:220px) {
+    .Logo{
+       font-size: x-large;
+       font-weight: 100;
+    }
+}
+@media (max-width:170px) {
+    .Logo{
+       font-size: large;
+       font-weight: 100;
+    }
+}
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
