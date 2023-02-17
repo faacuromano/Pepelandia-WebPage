@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&family=Noto+Sans+Tagbanwa&display=swap');
+
+.imagen{
+    height: 100%;
+}
+.token-preview{
+    position: relative;
+}
+.container{
+    border: 1px solid rgba(var(--text-color-rgb),.1);
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px rgba(var(--text-color-rgb),.04);
+    transition: all .1s;
+    position: relative;
+    background: var(--area-bg);
+    scale: .9;
+
+}
+.overlay{
+    position: absolute;
+}
+.asd{
+    background-color: #232323;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    /* border-radius: 0; */
+    height: auto;
+    aspect-ratio: 2.14/3;
+}
+.holder{
+    display: contents;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    margin-top: 5vh;
+}
+.cardTitle{
+    font-family: 'IBM Plex Mono', monospace;
+    padding-bottom: 1%;
+    font-size: 1.45rem;
+}
+@media (max-width:600px) {
+    .cardTitle{font-size: smaller;}
+    .cardBody{  padding: 0;}
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+
+}
