@@ -27,10 +27,8 @@
     position: relative;
     overflow: hidden;
     /* border-radius: 0; */
-    border: 2px solid #fdfdfd;
     height: auto;
-    aspect-ratio: 2/3;
-    border-top-right-radius: 70px;
+    aspect-ratio: 2.14/3;
 }
 .holder{
     display: contents;
@@ -44,6 +42,7 @@
 .cardTitle{
     font-family: 'IBM Plex Mono', monospace;
     padding-bottom: 1%;
+    font-size: 1.45rem;
 }
 @media (max-width:600px) {
     .cardTitle{font-size: smaller;}
@@ -53,4 +52,6 @@
 a{
     text-decoration: none;
     color: black;
+    font-size: large;
+
 }

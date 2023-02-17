@@ -1,5 +1,3 @@
-
-
 body {
     font-family: Source Sans Pro,sans-serif;
     font-size: 1.1rem;
@@ -16,17 +14,16 @@ body {
     background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 
     display: grid;
-    grid-template-columns: minmax(20vh, 45vh) minmax(20vh, 45vh);
+    grid-template-columns: minmax(20vh, 45vh) minmax(20vh, 45vh) minmax(20vh, 45vh);
     justify-content: space-around;
 }
 
 .cardBody{
     background-color: beige;
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 40px;
 }
+
 .cardTitle{
-margin: 0;
+    margin: 0;
 }
 
 .buttonsContainer{
@@ -94,15 +91,24 @@ margin: 0;
     .artowrk-container{
         grid-template-columns:minmax(15vh, 50vh);
     }
+    .NavbarForoLabel{
+        font-size: large;
+    }
 }
 @media (max-width:485px) {
     .Logo{
        font-size: xxx-large;
     }
+    .NavbarForoLabel{
+        font-size: medium;
+    }
 }
 @media (max-width:300px) {
     .Logo{
        font-size: xx-large;
+    }
+    .NavbarForoLabel{
+        font-size: small;
     }
 }
 @media (max-width:220px) {
@@ -110,11 +116,17 @@ margin: 0;
        font-size: x-large;
        font-weight: 100;
     }
+    .NavbarForoLabel{
+        font-size: x-small;
+    }
 }
 @media (max-width:170px) {
     .Logo{
        font-size: large;
        font-weight: 100;
+    }
+    .NavbarForoLabel{
+        font-size: x-small;
     }
 }
 button:disabled,

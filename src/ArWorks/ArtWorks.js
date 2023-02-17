@@ -12,7 +12,7 @@ const ArtWorks = ({title, eds, url, img, artist, id, artistLink}) => {
   return (
     <div>
     <div id="artworks" className="container">
-    <div classname ="card"> 
+    <a classname ="card" href={url}> 
         
         <Card color="light"  >
         <a className="token-preview">
@@ -26,25 +26,19 @@ const ArtWorks = ({title, eds, url, img, artist, id, artistLink}) => {
 
         <CardBody className='cardBody' > 
 
-            <CardTitle className='cardTitle' tag="h5">Title: {title}</CardTitle>
+            <CardTitle className='cardTitle' tag="h5">{title}</CardTitle>
 
             
-            <CardTitle className="cardTitle" tag="h5"> Artist:
+            <CardTitle className="cardTitle" tag="h5">
               <a className="cardTitle" tag="h5" href={artistLink}> {artist} </a>
             </CardTitle>
 
-            <CardTitle className="cardTitle" tag="h5">Eds: {eds}</CardTitle>
-
-            <CardTitle className="cardTitle" tag="h5"> URL:
-              <a className="cardTitle" tag="h5" href={url}> {url} </a>
-            </CardTitle>
-
-
+            <CardTitle className="cardTitle" tag="h5">22/{eds}</CardTitle>
 
         </CardBody>
 
         </Card>
-    </div>
+    </a>
     </div>
     </div>
   )
